@@ -1,0 +1,72 @@
+.haeder{
+    height:100vh;
+    padding-top:7rem;
+    overflow:hidden;
+}
+
+.haeder__container{
+    text-align:center;
+    height:100%;
+    position:relative;
+}
+
+/*=========== CTA ==================*/
+
+.cta{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content:center;
+}
+
+/*=========== HAEDER SOCIALS ==================*/
+
+.haeder__socials{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.8rem;
+    position:absolute;
+    left:0;
+    bottom:1rem;
+}
+
+.haeder__socials::after{
+    content: "";
+    width:1px;
+    height:2rem;
+    background:var(--color-primary);
+
+}
+/*=========== SCROLL DOWN ==================*/
+.scroll__down{
+    position:absolute;
+    right:-4.3rem;
+    bottom:2rem;
+    transform:rotate(90deg);
+    font-weight: 500px;
+    font-size: 0.9rem;
+}
+
+/*=================MEDIA QUERIES(MEDIUM DEVICES)=====*/
+
+@media screen and (max-width:1024px) {
+   haeder{
+    height:68vh;
+   }
+}
+
+/*=================MEDIA QUERIES(SMALL DEVICES)=====*/
+@media screen and (max-width:600px) {
+    haeder{
+        height:100vh;
+       }
+       .haeder__socials,
+       .scroll__down{
+        display:none;
+       }
+}
+
+
+
